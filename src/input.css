@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+html {
+    font-size: calc(0.864vw);
+}
+
+.jakarta {
+  font-family: "Plus+Jakarta+Sans", sans-serif;
+}
