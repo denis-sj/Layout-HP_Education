@@ -1,10 +1,44 @@
 @import "tailwindcss";
 
-
 html {
-    font-size: calc(0.864vw);
+  font-size: calc(0.864vw);
 }
 
 .jakarta {
   font-family: "Plus+Jakarta+Sans", sans-serif;
+}
+
+.gradient-text {
+  /* 1. Задаем градиент фоном */
+  background: linear-gradient(
+    90deg,
+    #ffffff 40%,
+    rgba(255, 255, 255, 0) 100% /* Прозрачный белый в конце */
+  );
+
+  /* 2. обрезаем фон по тексту */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 3. Делаем сам текст прозрачным, чтобы фон просвечивал */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.custom-gradient-profile {
+  background: linear-gradient(
+    180deg,
+    #060b28f0 0%,
+    /* #060B28 с 94% непрозрачности */ #0a0e239e 100%
+      /* #0A0E23 с 62% непрозрачности */
+  );
+}
+
+.custom-gradient-profile-edit {
+  background: linear-gradient(
+    300deg,
+    #0A0E23B0 40%,    /* Сплошной цвет (без F0) */
+  #0A0E237D 60%,   /* Сплошной цвет (без 7D) */
+  #060B28F0 100%   /* Сплошной цвет (без B0) */
+  );
 }

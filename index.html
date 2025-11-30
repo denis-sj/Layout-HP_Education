@@ -17,11 +17,11 @@
       class="bg-[url('/assets/sidebar/bg.svg')] flex flex-row object-cover bg-no-repeat"
     >
       <nav
-        class="min-w-66 h-283.75 border-[2px] flex flex-col justify-between rounded-[1.25rem] border-blue-200 mt-2.5 ml-2.5 bg-gradient-to-r from-[#060B26F0] to-transparent from-6%"
+        class="max-w-66 h-283.75 border-[2px] flex flex-col justify-between rounded-[1.25rem] border-blue-200 mt-2.5 ml-2.5 bg-gradient-to-r from-[#060B26F0] to-transparent from-6%"
       >
         <div>
           <h1
-            class="mt-[2.25rem] jakarta font-medium text-center text-[0.875rem] bg-gradient-to-r from-white from-50% bg-clip-text text-transparent"
+            class="mt-[2.25rem] jakarta font-medium text-center text-[0.875rem] gradient-text"
           >
             VISION UI FREE
           </h1>
@@ -191,10 +191,10 @@
       </nav>
       <div>
         <header
-          class="min-w-389.5 min-h-[3.2813rem] border-2 pl-[2.5625rem] pt-[1.25rem] border-blue-100"
+          class="min-w-389.5 min-h-[3.2813rem] border-2 pl-[2.5625rem] mt-[1.25rem] border-blue-100"
         >
           <div class="flex flex-row justify-between w-full">
-            <div class="flex flex-col h-[2.375rem] pt-[1.5rem]">
+            <div class="flex flex-col h-[2.375rem] mt-[1.5rem]">
               <p class="text-[0.75rem] jakarta font-normal text-gray-500">
                 Pages <span class="text-[#FFFFFF] jakarta">/ Profile</span
                 ><br />
@@ -203,7 +203,9 @@
             </div>
             <div class="flex items-center">
               <div class="w-49.75 h-[2.4688rem] relative">
-                <div class="absolute flex items-center inset-y-0 pl-[0.7913rem]">
+                <div
+                  class="absolute flex items-center inset-y-0 pl-[0.7913rem]"
+                >
                   <img
                     src="./assets/main/lypa.svg"
                     alt="lypa"
@@ -217,17 +219,82 @@
                 />
               </div>
 
-              <div class="flex items-center ml-[1.125rem] gap-[3px] justify-center">
-                <img src="./assets/main/user.svg" alt="user" class="w-[0.75rem] h-[0.8rem]">
-                <p class="jakarta font-normal text-[0.75rem] text-[#718096]">Sign In</p>
+              <div
+                class="flex items-center ml-[1.125rem] gap-[3px] justify-center"
+              >
+                <img
+                  src="./assets/main/user.svg"
+                  alt="user"
+                  class="w-[0.75rem] h-[0.8rem] mb-[2px]"
+                />
+                <p
+                  class="jakarta font-normal text-[0.75rem] text-[#718096] cursor-pointer"
+                >
+                  Sign In
+                </p>
               </div>
 
-              <img src="./assets/main/settings.svg" alt="settings" class="w-[0.75rem] h-[0.75rem] ml-[1.1875rem]">
-              <img src="./assets/main/notification.svg" alt="notification" class="w-[0.75rem] h-[0.75rem] ml-[1.0625rem]">
+              <img
+                src="./assets/main/settings.svg"
+                alt="settings"
+                class="w-[0.75rem] h-[0.75rem] ml-[1.1875rem] cursor-pointer"
+              />
+              <img
+                src="./assets/main/notification.svg"
+                alt="notification"
+                class="w-[0.75rem] h-[0.75rem] ml-[1.0625rem] mr-[2.9375rem] cursor-pointer"
+              />
             </div>
           </div>
         </header>
-        <main class="border-[2px] border-blue-950"></main>
+        <main
+          class="border-[2px] border-blue-950 w-full pl-[1.5rem] mt-[2.7813rem] pr-[1.5rem]"
+        >
+          <div
+            class="flex justify-between align-center w-full max-h-[8.0625rem] custom-gradient-profile rounded-[1.25rem]"
+          >
+            <div class="flex ml-[1.4063rem] mt-[1.375rem] mb-[1.375rem]">
+              <div class="relative inline-block">
+                <img
+                  src="./assets/main/photo.svg"
+                  alt="photo"
+                  class="h-[5rem] w-[5rem]"
+                />
+                <button
+                  class="flex items-center justify-center cursor-pointer absolute -bottom-2 -right-1 rounded-[0.5rem] custom-gradient-profile-edit w-[1.625rem] h-[1.625rem] text-center"
+                >
+                  <img
+                    src="./assets/main/edit.svg"
+                    alt="edit"
+                    class="w-[0.75rem] h-[0.75rem]"
+                  />
+                </button>
+              </div>
+              <div class="flex flex-col justify-center ml-[1.375rem]">
+                <h2 class="text-white font-bold text-[1.125rem] jakarta">
+                  Mark Johnson
+                </h2>
+                <p class="text-[#A0AEC0] font-normal jakarta text-[0.875rem]">
+                  mark@simmmple.com
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <button
+                type="button"
+                class="w-[8.4063rem] h-[2.1875rem] cursor-pointer flex items-center justify-center font-bold text-[0.625rem] jakarta text-[white] rounded-[0.75rem] bg-[#0075FF]"
+              >
+                  <img
+                    src="./assets/main/cube.svg"
+                    alt="cube"
+                    class="w-[0.6875rem] h-[0.6875rem] mr-[4px]"
+                  />OVERVIEW
+              </button>
+              <button class="w-[8.4063rem] h-[2.1875rem] font-bold text-[0.625rem] jakarta text-[white] flex items-center justify-center cursor-pointer"><img src="./assets/main/icon_teams.svg" alt="teams" class="w-[0.6875rem] h-[0.6875rem] mr-[4px] mb-[3px]">TEAMS</button
+            ><button class="w-[8.4063rem] h-[2.1875rem] font-bold text-[0.625rem] jakarta text-[white] flex items-center justify-center cursor-pointer mr-[3.2813rem]"><img src="./assets/main/icon_settings.svg" alt="settings" class="w-[0.6875rem] h-[0.6875rem] mr-[2px]">PROJECTS</button>
+            </div>
+          </div>
+        </main>
         <footer class=""></footer>
       </div>
     </div>
