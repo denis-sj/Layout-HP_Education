@@ -4,7 +4,7 @@ html {
   font-size: calc(0.864vw);
 }
 
-.jakarta {
+body {
   font-family: "Plus+Jakarta+Sans", sans-serif;
 }
 
@@ -37,8 +37,38 @@ html {
 .custom-gradient-profile-edit {
   background: linear-gradient(
     300deg,
-    #0A0E23B0 40%,    /* Сплошной цвет (без F0) */
-  #0A0E237D 60%,   /* Сплошной цвет (без 7D) */
-  #060B28F0 100%   /* Сплошной цвет (без B0) */
+    #0a0e23b0 40%,
+    /* Сплошной цвет (без F0) */ #0a0e237d 60%,
+    /* Сплошной цвет (без 7D) */ #060b28f0 100% /* Сплошной цвет (без B0) */
   );
+}
+
+.gradient-car-info {
+  background: linear-gradient(
+    180deg,
+    #060b28f0 15%,
+    /* Верх: Почти непрозрачный */ #0a0e237d 70%,
+    /* Середина: Полупрозрачный */ #0a0e23b0 100% /* Низ: Чуть плотнее */
+  );
+}
+
+.gradient-ellipse {
+  background: linear-gradient(
+    10deg,
+    #060B28B2 15%,
+    #080D25B6 60%,
+    #0A0E2359 100%
+  )
+}
+
+.gradient-profile-informations {
+  background: linear-gradient(
+    180deg,
+    #060B28F0 40%,
+    #0A0E237D 100%
+  );
+}
+
+.gradient-card {
+  background: linear-gradient(45deg, #060b26bd 30%, #1a1f3780 100%);
 }
