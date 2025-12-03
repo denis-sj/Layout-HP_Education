@@ -72,3 +72,79 @@ body {
 .gradient-card {
   background: linear-gradient(45deg, #060b26bd 30%, #1a1f3780 100%);
 }
+
+/* Toggle Switch css */
+/* Toggle Switch css */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.25rem;
+  height: 1.1563rem;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1B1F3D;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  /* РАСЧЕТ РАЗМЕРОВ КРУЖКА: */
+  /* Высота контейнера (1.1563rem) минус отступы (~0.3rem) */
+  height: 0.85rem;
+  width: 0.85rem;
+  /* Отступы, чтобы кружок был по центру */
+  left: 0.153rem;
+  bottom: 0.153rem;
+  
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1B1F3D;
+}
+
+input:checked + .slider:before {
+  /* РАСЧЕТ СДВИГА: */
+  /* Ширина (2.25) - Ширина кружка (0.85) - Отступы слева и справа (0.306) */
+  -webkit-transform: translateX(1.09rem);
+  -ms-transform: translateX(1.09rem);
+  transform: translateX(1.09rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.gradient-platform-settings {
+  background:linear-gradient(
+    45deg,
+    #060B28F0 40%,
+    #0A0E237D 100%
+  )
+}
